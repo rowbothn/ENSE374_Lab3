@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*
 *
 * Filename: ExampleList.java
@@ -24,8 +26,7 @@ public class ListElement {
 		return this.data;
 	}
 	
-	public static void main(String[] args) {
-		ListElement le = new ListElement();
-		le.setData(5);
+	public void addElement(ListElement le) {
+		
 	}
 }
