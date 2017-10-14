@@ -13,6 +13,6 @@ public class TestList {
 		ListElement le = new ListElement();
 		le.setData(5);
 		
-		
+		le.addElement(le);
 	}
 }
