@@ -25,6 +25,6 @@ public class ListElement {
 	}
 	
 	public void addElement(ListElement le) {
-		
+		this.next = le;
 	}
 }
