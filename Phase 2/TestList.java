@@ -26,6 +26,10 @@ public class TestList {
 		list.addElement(le);
 		
 		list.printLinkedListHead();
+		System.out.println();
+		list.printLinkedListTail();
+		
+		
 		
 		//System.out.println(list.getElement(3).getData());
 	}

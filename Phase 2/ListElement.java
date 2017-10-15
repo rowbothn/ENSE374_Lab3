@@ -115,4 +115,15 @@ public class ListElement {
 			traverse_nodes = traverse_nodes.next;
 		}
 	}
+	
+	public void printLinkedListTail() {
+		ListElement traverse_nodes = lastElement;
+		if(length == 0) {
+			System.out.println("The List Is Empty.");
+		}
+		for(int i = length; i > 0; i--) {
+			System.out.println(traverse_nodes.getData());
+			traverse_nodes = traverse_nodes.previous;
+		}
+	}
 }
