@@ -25,11 +25,31 @@ public class TestList {
 		le.setData(4);
 		list.addElement(le);
 		
+		System.out.println("BEFORE: ");
 		list.printLinkedListHead();
 		System.out.println();
 		list.printLinkedListTail();
 		
+		list.deleteElement(2);
+		System.out.println();
+		list.deleteElement(2);
 		
+		System.out.println("AFTER: ");
+		list.printLinkedListHead();
+		System.out.println();
+		list.printLinkedListTail();
+		
+		System.out.print("Testing Get!: ");
+		System.out.print(list.getElement(2).getData() + "\n");
+		
+		System.out.println("Testing Add Again!");
+		le.setData(5);
+		list.addElement(le);
+		System.out.println();
+		
+		list.printLinkedListHead();
+		System.out.println();
+		list.printLinkedListTail();
 		
 		//System.out.println(list.getElement(3).getData());
 	}

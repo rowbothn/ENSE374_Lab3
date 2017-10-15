@@ -62,12 +62,14 @@ public class ListElement {
 			if (length == 1) { //Only 1 Node in List
 				ListElement temp = firstElement;
 				firstElement = null;
+				lastElement = null;
 				length--;
 				return temp;
 			}
 			else { //More than 1 Node
 				ListElement deleted_node = lastElement;
 				lastElement = previous_node;
+				lastElement.next = null;
 				length--;
 				return deleted_node;
 			}
@@ -75,6 +77,7 @@ public class ListElement {
 		else if(index == 1) { //Node at beginning
 			ListElement temp = firstElement;
 			firstElement = firstElement.next;
+			firstElement.previous = null;
 			length--;
 			return temp;
 		}
@@ -82,6 +85,7 @@ public class ListElement {
 			ListElement deleted_node = previous_node.next;
 			ListElement post = deleted_node.next;
 			previous_node.next = post;
+			post.previous = previous_node;
 			length--;
 			return deleted_node;
 		}
