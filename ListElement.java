@@ -84,6 +84,24 @@ public class ListElement {
 		}
 	}
 	
+	public ListElement getElement(int index) {
+		if(index == 1) {
+			ListElement get_node = firstElement;
+			return get_node;
+		}
+		else if(index == length) {
+			ListElement get_node = lastElement;
+			return get_node;
+		}
+		else {
+			ListElement get_node = firstElement;
+			for(int i = 1; i <= index; i++) {
+				get_node = get_node.next;
+			}
+			return get_node;
+		}
+	}
+	
 	public void printLinkedListHead() {
 		ListElement traverse_nodes = firstElement;
 		if(length == 0) {
