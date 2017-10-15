@@ -8,16 +8,26 @@ import java.util.*;
 */
 
 public class LinkedList {
-	private ListElement begin;
+	private ListElement firstElement;
+	private ListElement lastElement;
 	int length;
 	
 	public LinkedList() {
-		this.begin = null;
-		this.length = 0;
+		firstElement = null;
+		lastElement = null;
+		length = 0;
 	}
 	
 	public void addElement(ListElement le) {
-		
+		if(firstElement == null) {
+			firstElement = le;
+			lastElement = firstElement;
+		}
+		else {
+			lastElement.setNext(le);
+			lastElement = lastElement.getNext();
+		}
+		length++;
 	}
 	
 	/* public ListElement getElement(int index) {

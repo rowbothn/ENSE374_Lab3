@@ -16,6 +16,14 @@ public class ListElement {
 		this.next = null;
 	}
 	
+	public void setNext(ListElement le) {
+		next = le;
+	}
+	
+	public ListElement getNext() {
+		return this.next;
+	}
+	
 	public void setData(int data) {
 		this.data = data;
 	}
