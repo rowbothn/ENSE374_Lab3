@@ -10,10 +10,21 @@ import java.util.*;
 public class TestList {
 	/*--MAIN--*/
 	public static void main(String[] args) {
-		LinkedList list = new LinkedList();
+		ListElement list = new ListElement();
 		ListElement le = new ListElement();
-		le.setData(5);
 		
+		le.setData(1);
 		list.addElement(le);
+		
+		le.setData(2);
+		list.addElement(le);
+		
+		le.setData(3);
+		list.addElement(le);
+		
+		le.setData(4);
+		list.addElement(le);
+		
+		list.printLinkedListHead();
 	}
 }
