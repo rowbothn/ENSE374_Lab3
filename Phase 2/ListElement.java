@@ -9,6 +9,7 @@ import java.util.*;
 
 public class ListElement {
 	private ListElement next;
+	private ListElement previous;
 	private ListElement firstElement;
 	private ListElement lastElement;
 	private int length;
@@ -17,6 +18,7 @@ public class ListElement {
 	public ListElement() {
 		this.data = 0;
 		this.next = null;
+		this.previous = null;
 	}
 	
 	public ListElement(ListElement node) {
@@ -40,6 +42,7 @@ public class ListElement {
 		}
 		else {
 			lastElement.next = le;
+			le.previous = lastElement;
 			lastElement = le;
 		}
 		length++;

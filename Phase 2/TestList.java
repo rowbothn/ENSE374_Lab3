@@ -27,6 +27,6 @@ public class TestList {
 		
 		list.printLinkedListHead();
 		
-		System.out.println(list.getElement(3).getData());
+		//System.out.println(list.getElement(3).getData());
 	}
 }
